@@ -1,5 +1,6 @@
 import { Popover, PopoverContent, PopoverTrigger } from "components/ui/popover";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   imageUrl: string;
@@ -13,7 +14,7 @@ function Topic2(props: Props) {
       {props.variant === "normal" ? (
         <Popover>
           <PopoverTrigger>
-            <div className="flex gap-4 w-full items-center py-8 bg-gray-light mx-auto px-20">
+            <div className="flex gap-4 w-full items-center py-8 bg-gray-light mx-auto px-14">
               {/* Icon */}
               <div>
                 <Image alt="icon" src={props.imageUrl} width={52} height={52} />
@@ -35,7 +36,7 @@ function Topic2(props: Props) {
           </PopoverContent>
         </Popover>
       ) : (
-        <>
+        <Link href={"/ss"}>
           <div className="flex gap-4 max-w-[544px] items-center py-8 bg-gray-light px-14">
             {/* Icon */}
             <div>
@@ -61,7 +62,7 @@ function Topic2(props: Props) {
             </div>
             {/* Text */}
           </div>
-        </>
+        </Link>
       )}
     </>
   );

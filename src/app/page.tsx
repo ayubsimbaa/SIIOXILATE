@@ -1,24 +1,17 @@
 "use client";
 
 import Topic from "components/Other/Topic";
+import { Avatar, AvatarFallback, AvatarImage } from "components/ui/avatar";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex h-screen text-white bg-gray-light font-lato ">
-      <div className="bg-gray-700 w-[425px] p-2 bg-gray-dark">aside</div>
+      <Aside />
       <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto">
         <div className="flex flex-col gap-10">
           {/* Header */}
-          <div className="flex justify-between bg-gray-dark items-center p-4">
-            <div className="font-semibold text-lg">My topics</div>
-            <div>
-              <div className="flex items-center gap-4">
-                <Image alt="profile" src={"/pic.png"} width={32} height={32} />
-                <span className="font-semibold text-lg">Jane Cooper</span>
-              </div>
-            </div>
-          </div>
+          <TopSection />
 
           {/* main */}
           <div className="bg-[#ffffff] pt-4">
@@ -67,11 +60,39 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="font-medium text-[10px] bg-gray-dark p-1 max-w-[1272px] absolute bottom-0 left-[50%]">
-            Copyright © 2023 Helsinski Insurance Limited. All Rights Reserved.
-          </div>
+          <Footer />
         </div>
       </div>
+    </div>
+  );
+}
+
+function Aside() {
+  return <div className="bg-gray-700 w-[425px] p-2 bg-gray-dark">aside</div>;
+}
+
+function TopSection() {
+  return (
+    <div className="flex justify-between bg-gray-dark items-center p-4">
+      <div className="font-semibold text-lg">My topics</div>
+      <div>
+        <div className="flex items-center gap-4">
+          <Avatar>
+            <AvatarImage src="/pic.png" />
+            <AvatarFallback>JC</AvatarFallback>
+          </Avatar>
+
+          <span className="font-semibold text-lg">Jane Cooper</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="font-medium text-[10px] bg-gray-dark p-1 max-w-[1272px] absolute bottom-0 left-[50%]">
+      Copyright © 2023 Helsinski Insurance Limited. All Rights Reserved.
     </div>
   );
 }
