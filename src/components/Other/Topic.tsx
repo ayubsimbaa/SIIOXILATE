@@ -36,7 +36,7 @@ function Topic2(props: Props) {
           </PopoverContent>
         </Popover>
       ) : (
-        <Link href={"/ss"}>
+        <Link href={"/competing_products"}>
           <div className="flex gap-4 max-w-[544px] items-center py-8 bg-gray-light px-14">
             {/* Icon */}
             <div>

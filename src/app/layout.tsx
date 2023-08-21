@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from "components/ui/avatar";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
@@ -20,10 +21,55 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} min-h-screen bg-blue-700 antialiased`}>
-        {children}
-        {/* <Topic/> */}
+      <body
+        className={`${lato.variable} min-h-screen bg-blue-700 antialiased [&::-webkit-scrollbar]:hidden`}
+      >
+        <div className="flex h-screen text-white bg-gray-light font-lato ">
+          <Aside />
+          <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto">
+            <div className="flex flex-col gap-10">
+              {/* Header */}
+              <TopSection />
+
+              {/* main */}
+
+              {children}
+
+              <Footer />
+            </div>
+          </div>
+        </div>
       </body>
     </html>
+  );
+}
+
+function Aside() {
+  return <div className="bg-gray-700 w-[425px] p-2 bg-gray-dark">aside</div>;
+}
+
+function TopSection() {
+  return (
+    <div className="flex justify-between bg-gray-dark items-center p-4">
+      <div className="font-semibold text-lg">My topics</div>
+      <div>
+        <div className="flex items-center gap-4">
+          <Avatar>
+            <AvatarImage src="/pic.png" />
+            <AvatarFallback>JC</AvatarFallback>
+          </Avatar>
+
+          <span className="font-semibold text-lg">Jane Cooper</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="font-medium text-[10px] bg-gray-dark p-1 max-w-[1272px] absolute bottom-0 left-[50%]">
+      Copyright © 2023 Helsinski Insurance Limited. All Rights Reserved.
+    </div>
   );
 }
