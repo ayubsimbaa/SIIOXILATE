@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@components/ui/avatar";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
@@ -68,7 +68,7 @@ function TopSection() {
 
 function Footer() {
   return (
-    <div className="font-medium text-[10px] bg-gray-dark p-1 max-w-[1272px] absolute bottom-0 left-[50%]">
+    <div className="font-medium text-[10px] bg-gray-dark p-1 absolute bottom-0 left-[50%] px-20">
       Copyright © 2023 Helsinski Insurance Limited. All Rights Reserved.
     </div>
   );

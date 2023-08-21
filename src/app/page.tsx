@@ -1,6 +1,6 @@
 "use client";
 
-import Topic from "components/Other/Topic";
+import Topic from "@components/Other/Topic";
 import Image from "next/image";
 
 export default function Home() {

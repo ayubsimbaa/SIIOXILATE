@@ -1,4 +1,8 @@
-import { Popover, PopoverContent, PopoverTrigger } from "components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger
+} from "@components/ui/popover";
 import Image from "next/image";
 import Link from "next/link";
 
