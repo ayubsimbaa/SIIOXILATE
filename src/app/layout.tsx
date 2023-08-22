@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import type { Metadata } from "next";
 import { Actor, Averia_Libre, Lato } from "next/font/google";
 import { useSelectedLayoutSegment } from "next/navigation";
@@ -48,11 +48,12 @@ export default function RootLayout({
           <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto relative">
             <div className="flex flex-col gap-10">
               {/* Header */}
-              {pathname !== "new_insights" && (
-                <Suspense fallback={<Loading />}>
-                  <TopSection />
-                </Suspense>
-              )}
+              {pathname !== "new_insights" ||
+                ("competing_products" && (
+                  <Suspense fallback={<Loading />}>
+                    <TopSection />
+                  </Suspense>
+                ))}
 
               {/* main */}
 
