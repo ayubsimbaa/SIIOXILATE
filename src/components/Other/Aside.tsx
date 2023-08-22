@@ -36,21 +36,21 @@ export default function Aside() {
     },
   ];
   return (
-    <div className="bg-gray-700 max-w-[425px] p-5 bg-gray-dark grid">
-      <span className="font-extrabold text-3xl italic p-2">OXILATE</span>
-
-      <div className="flex flex-col">
-        <span>My Account</span>
+    <div className="bg-gray-700 max-w-[425px] p-5 bg-gray-dark grid pb-20">
+      <div className="grid">
+        <span className="font-extrabold text-3xl italic p-2 my-10">
+          OXILATE
+        </span>
         <span>Welcome, Antonio Torrejon! 👋 </span>
       </div>
 
-      <div className="grid gap-2 my-10 bg-gray-light/60 rounded-xl px-5">
+      <div className="grid gap-2 mt-2 mb-10 bg-gray-light/60 rounded-xl px-5">
         {options.map((opt, index) => (
           <Option {...opt} key={index} />
         ))}
       </div>
 
-      <div className="grid gap-2">
+      <div className="grid gap-2 mt-2 mb-10 rounded-xl px-5">
         {options2.map((opt, index) => (
           <Option {...opt} key={index} />
         ))}
