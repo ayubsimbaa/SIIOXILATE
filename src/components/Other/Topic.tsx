@@ -18,14 +18,14 @@ function Topic2(props: Props) {
       {props.variant === "normal" ? (
         <Popover>
           <PopoverTrigger>
-            <div className="flex gap-4 w-full items-center py-8 bg-gray-light mx-auto px-14">
+            <div className="flex gap-4 w-full items-center py-4 bg-gray-light mx-auto px-14">
               {/* Icon */}
               <div>
                 <Image alt="icon" src={props.imageUrl} width={52} height={52} />
               </div>
               <div className="flex flex-col gap-3">
                 <p
-                  className={`font-black text-lg ${
+                  className={`font-semibold text-base ${
                     props.variant === "normal" ? "text-black" : "text-blue-dark"
                   }`}
                 >
@@ -41,13 +41,13 @@ function Topic2(props: Props) {
         </Popover>
       ) : (
         <Link href={"/competing_products"}>
-          <div className="flex gap-4 max-w-[544px] items-center py-8 bg-gray-light px-14">
+          <div className="flex gap-4 max-w-[544px] items-center py-4 bg-gray-light px-14">
             {/* Icon */}
             <div>
               <Image alt="icon" src={props.imageUrl} width={52} height={52} />
             </div>
             <div className="flex flex-col gap-3">
-              <p className={`font-black text-lg text-blue-dark`}>
+              <p className={`font-semibold text-base text-blue-dark`}>
                 {props.title}
               </p>
               {props.variant === "withall" && (

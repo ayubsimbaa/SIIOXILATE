@@ -1,6 +1,10 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@components/ui/avatar";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import { Suspense } from "react";
+import Aside from "../components/Other/Aside";
+import Footer from "../components/Other/Footer";
+import TopSection from "../components/Other/TopSection";
+import Loading from "./competing_products/loading";
 import "./globals.css";
 
 const lato = Lato({
@@ -29,7 +33,9 @@ export default function RootLayout({
           <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto">
             <div className="flex flex-col gap-10">
               {/* Header */}
-              <TopSection />
+              <Suspense fallback={<Loading />}>
+                <TopSection />
+              </Suspense>
 
               {/* main */}
 
@@ -41,35 +47,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  );
-}
-
-function Aside() {
-  return <div className="bg-gray-700 w-[425px] p-2 bg-gray-dark">aside</div>;
-}
-
-function TopSection() {
-  return (
-    <div className="flex justify-between bg-gray-dark items-center p-4">
-      <div className="font-semibold text-lg">My topics</div>
-      <div>
-        <div className="flex items-center gap-4">
-          <Avatar>
-            <AvatarImage src="/pic.png" />
-            <AvatarFallback>JC</AvatarFallback>
-          </Avatar>
-
-          <span className="font-semibold text-lg">Jane Cooper</span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div className="font-medium text-[10px] bg-gray-dark p-1 absolute bottom-0 left-[50%] px-20">
-      Copyright © 2023 Helsinski Insurance Limited. All Rights Reserved.
-    </div>
   );
 }
