@@ -9,7 +9,7 @@ const buttonVariants = cva("px-2 w-fit", {
     variant: {
       default: "bg-blue-dark",
       open_link: "bg-none border-2 rounded-3xl",
-      with_icon:"flex gap-5 items-center "
+      with_icon: "flex gap-5 items-center ",
     },
   },
   defaultVariants: {

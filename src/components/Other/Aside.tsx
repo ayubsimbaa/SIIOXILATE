@@ -41,7 +41,7 @@ export default function Aside() {
         <span className="font-extrabold text-3xl italic p-2 my-10">
           OXILATE
         </span>
-        <span>Welcome, Antonio Torrejon! 👋 </span>
+        <span className="font-medium">Welcome, Antonio Torrejon! 👋 </span>
       </div>
 
       <div className="grid gap-2 mt-2 mb-10 bg-gray-light/60 rounded-xl px-5">

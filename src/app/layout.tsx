@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <div className="flex h-screen text-white bg-gray-light font-lato ">
           <Aside />
-          <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto">
+          <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto relative">
             <div className="flex flex-col gap-10">
               {/* Header */}
               <Suspense fallback={<Loading />}>
