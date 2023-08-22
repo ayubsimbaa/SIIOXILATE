@@ -5,6 +5,7 @@ interface Props {
   title: string;
   body: {
     text: string;
+    highlightedInfo: string;
   };
 }
 
@@ -16,14 +17,18 @@ export default function Insights(props: Props) {
         {props.subtitle}
       </h4>
       <h2>{props.title}</h2>
-      <code>{props.body.text}</code>
+
       <p
         className="line-clamp-2 mb-5 font-actor"
         dangerouslySetInnerHTML={{ __html: props.body.text }}
         // onMouseOver={(e) => {
         //   const target = e.target;
-        //   if (target.className === "highlight") {
-        //     alert(insight.body.highlightedInfo[target.textContent]);
+        //   if (target instanceof Element) {
+        //     if (target.className === "highlight") {
+        //       if (target.textContent !== null) {
+        //         alert(props.body.highlightedInfo[target.textContent]);
+        //       }
+        //     }
         //   }
         // }}
       ></p>
