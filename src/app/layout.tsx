@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Actor, Averia_Libre, Lato } from "next/font/google";
 import { Suspense } from "react";
 import Aside from "../components/Other/Aside";
 import Footer from "../components/Other/Footer";
@@ -11,6 +11,18 @@ const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
   variable: "--font-lato",
+});
+
+const averia = Averia_Libre({
+  subsets: ["latin"],
+  weight: ["400", "300"],
+  variable: "--font-averia",
+});
+
+const actor = Actor({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-actor",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} min-h-screen bg-blue-700 antialiased [&::-webkit-scrollbar]:hidden`}
+        className={`${lato.variable} ${averia.variable} ${actor.variable} min-h-screen bg-blue-700 antialiased [&::-webkit-scrollbar]:hidden`}
       >
-        <div className="flex h-screen text-white bg-gray-light font-lato ">
+        <div className="flex h-screen bg-gray-light font-lato ">
           <Aside />
           <div className="bg-gray-800 flex-1 p-2 max-w-[1272px] mx-auto relative">
             <div className="flex flex-col gap-10">

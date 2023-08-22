@@ -36,7 +36,7 @@ export default function Aside() {
     },
   ];
   return (
-    <div className="bg-gray-700 max-w-[425px] p-5 bg-gray-dark grid pb-20">
+    <div className="bg-gray-700 max-w-[425px] p-5 bg-gray-dark grid pb-20 rounded-r-3xl">
       <div className="grid">
         <span className="font-extrabold text-3xl italic p-2 my-10">
           OXILATE
