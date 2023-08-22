@@ -1,6 +1,7 @@
 "use client";
 
 import Insights from "@/src/components/Other/Insights";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import mockData from "./mockData.json";
 
@@ -16,6 +17,16 @@ export default function Page() {
 
   return (
     <div className="space-y-8">
+      <Image
+        alt="competing products"
+        src={"/png/top.png"}
+        width={1072}
+        height={634}
+      />
+      <div className="pl-8 space-y-2">
+        <p className="font-semibold text-xl">New Insights!!</p>
+      </div>
+
       {data &&
         data.insights.map((insight, index) => (
           <Insights {...insight} key={index} />

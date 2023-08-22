@@ -1,37 +1,46 @@
+"use client";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import Link from "next/link";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 export default function Aside() {
+  const path = useSelectedLayoutSegment();
   const options: OptionType[] = [
     {
-      imageUrl: "/svg/home.svg",
+      image_url: "/svg/home.svg",
       title: "Home",
     },
     {
-      imageUrl: "/svg/attachment.svg",
+      image_url: "/svg/attachment.svg",
       title: "My Files",
     },
     {
-      imageUrl: "/svg/topic.svg",
+      image_url: "/svg/topic.svg",
       title: "My Topics",
     },
     {
-      imageUrl: "/svg/mail.svg",
+      image_url: "/svg/mail.svg",
       title: "My Emails",
+    },
+    {
+      image_url: "/png/insights.png",
+      title: "Insights",
+      url: "/new_insights",
+      is_active: true,
     },
   ];
 
   const options2: OptionType[] = [
     {
-      imageUrl: "/svg/password.svg",
+      image_url: "/svg/password.svg",
       title: "Forgot Password",
     },
     {
-      imageUrl: "/svg/update.svg",
+      image_url: "/svg/update.svg",
       title: "Updates & FAQ",
     },
     {
-      imageUrl: "/svg/logout.svg",
+      image_url: "/svg/logout.svg",
       title: "Log out",
     },
   ];
@@ -60,15 +69,17 @@ export default function Aside() {
 }
 
 interface OptionType {
-  imageUrl: string;
+  image_url: string;
   title: string;
+  url?: string;
+  is_active?: boolean;
 }
 
 function Option(props: OptionType) {
   return (
-    <Button variant={"with_icon"}>
-      <Image alt="" src={props.imageUrl} width={32} height={32} />
+    <Link className={`flex gap-5 items-center`} href={props.url ?? "/"}>
+      <Image alt="" src={props.image_url} width={32} height={32} />
       <span className="font-semibold">{props.title}</span>
-    </Button>
+    </Link>
   );
 }
