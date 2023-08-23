@@ -3,7 +3,6 @@ import { Button } from '../ui/button'
 interface Props {
   title: string
   location: string
-  button_name: string
 }
 
 export default function CompetingProduct(props: Props) {
@@ -12,7 +11,7 @@ export default function CompetingProduct(props: Props) {
       <p>{props.title}</p>
       <Button>{props.location}</Button>
 
-      <Button variant={'open_link'}>{props.button_name}</Button>
+      <Button variant={'open_link'}>Open link</Button>
     </div>
   )
 }

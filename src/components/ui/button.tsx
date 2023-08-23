@@ -7,8 +7,8 @@ import { cn } from '@lib/utils'
 const buttonVariants = cva('px-2 w-fit', {
   variants: {
     variant: {
-      default: 'bg-blue-dark',
-      open_link: 'bg-none border-2 rounded-3xl',
+      default: 'bg-[#6DB8F2] rounded-md font-lato font-bold text-xs p-[10px]',
+      open_link: 'bg-none border-2 rounded-3xl flex justify-end items-center border-blue-dark',
       with_icon: 'flex gap-5 items-center ',
       validate_insight: 'bg-[#8BDA8E] rounded-xl text-white px-9 py-2',
       calcel_insight: 'bg-[#DA8B8B] rounded-xl text-white px-9 py-2',
@@ -40,3 +40,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = 'Button'
 
 export { Button, buttonVariants }
+
