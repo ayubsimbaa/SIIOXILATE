@@ -29,6 +29,7 @@ export default function Page() {
 
       {data &&
         data.insights.map((insight, index) => (
+          // @ts-ignore
           <Insights {...insight} key={index} />
         ))}
     </div>
