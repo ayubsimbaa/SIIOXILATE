@@ -1,9 +1,9 @@
-export interface productTyep {
+export interface productType {
   title: string
   location: string
 }
 
-const competingProducts: productTyep[] = [
+const competingProducts: productType[] = [
   {
     title: 'Axa Seguros',
     location: 'Madrid',
@@ -32,6 +32,11 @@ const competingProducts: productTyep[] = [
     title: 'Santalucia',
     location: 'Madrid',
   },
+  {
+    title: 'Mapfre',
+    location: 'Madrid',
+  },
 ]
 
 export { competingProducts }
+

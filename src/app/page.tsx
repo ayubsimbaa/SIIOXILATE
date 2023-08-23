@@ -30,6 +30,7 @@ export default function Home() {
             src={'/insurance.png'}
             width={458}
             height={490}
+            className='w-auto'
           />
         </div>
       </div>

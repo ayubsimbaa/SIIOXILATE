@@ -18,7 +18,7 @@ export default function Insights(props: Props) {
         src={'/png/insights.png'}
         width={32}
         height={32}
-        className='absolute left-5 top-5'
+        className='absolute left-5 top-5 w-auto h-auto'
       />
       <p className='font-averia text-xl'>Machine Learning Generated Insight</p>
       <h4 className='mb-10 font-averia font-light text-[#5C6277]'>

@@ -1,10 +1,10 @@
 import CompetingProduct from '@/src/components/Other/CompetingProduct'
-import { competingProducts, productTyep } from '@/src/fakeData/data'
+import { competingProducts, productType } from '@/src/fakeData/data'
 import { Suspense, useEffect, useState } from 'react'
 import Loading from './loading'
 
 export default function FetchData() {
-  const [products, setProducts] = useState<productTyep[]>([])
+  const [products, setProducts] = useState<productType[]>([])
 
   useEffect(() => {
     setTimeout(() => {
