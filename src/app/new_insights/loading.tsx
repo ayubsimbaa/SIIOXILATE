@@ -1,15 +1,15 @@
-import { Skeleton } from "@components/ui/skeleton";
+import { Skeleton } from '@components/ui/skeleton'
 
 export default function Loading() {
   return (
-    <div className="space-y-3">
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
-      <Skeleton className="w-full h-[36px]" />
+    <div className='space-y-3'>
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
+      <Skeleton className='h-[36px] w-full' />
     </div>
-  );
+  )
 }

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.highlight{
-    color: #8891AB
+.highlight {
+  color: #8891ab;
 }

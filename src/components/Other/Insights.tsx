@@ -1,31 +1,31 @@
-import Image from "next/image";
-import { Button } from "../ui/button";
+import Image from 'next/image'
+import { Button } from '../ui/button'
 
 interface Props {
-  subtitle: string;
-  title: string;
+  subtitle: string
+  title: string
   body: {
-    text: string;
-    highlightedInfo: string;
-  };
+    text: string
+    highlightedInfo: string
+  }
 }
 
 export default function Insights(props: Props) {
   return (
-    <div className="insight bg-[#E9E7E7] py-9 px-14 text-sm rounded-[28px] relative">
+    <div className='insight relative rounded-[28px] bg-[#E9E7E7] px-14 py-9 text-sm'>
       <Image
-        alt="icon"
-        src={"/png/insights.png"}
+        alt='icon'
+        src={'/png/insights.png'}
         width={32}
         height={32}
-        className="absolute top-5 left-5"
+        className='absolute left-5 top-5'
       />
-      <p className="font-averia text-xl">Machine Learning Generated Insight</p>
-      <h4 className="font-averia font-light text-[#5C6277] mb-10">
+      <p className='font-averia text-xl'>Machine Learning Generated Insight</p>
+      <h4 className='mb-10 font-averia font-light text-[#5C6277]'>
         {props.subtitle}
       </h4>
       <h2>{props.title}</h2>
-      <div className="line-clamp-2 mb-5 font-actor">
+      <div className='mb-5 line-clamp-2 font-actor'>
         <p
           dangerouslySetInnerHTML={{ __html: props.body.text }}
           // onMouseOver={(e) => {
@@ -41,10 +41,10 @@ export default function Insights(props: Props) {
         ></p>
       </div>
 
-      <div className="flex gap-5">
-        <Button variant={"validate_insight"}>validate insight</Button>
-        <Button variant={"calcel_insight"}>cancel insight</Button>
+      <div className='flex gap-5'>
+        <Button variant={'validate_insight'}>validate insight</Button>
+        <Button variant={'calcel_insight'}>cancel insight</Button>
       </div>
     </div>
-  );
+  )
 }

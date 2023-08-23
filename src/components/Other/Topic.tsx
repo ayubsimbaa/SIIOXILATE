@@ -1,32 +1,28 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger
-} from "@components/ui/popover";
-import Image from "next/image";
-import Link from "next/link";
+import { Popover, PopoverContent, PopoverTrigger } from '@components/ui/popover'
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface Props {
-  imageUrl: string;
-  title: string;
-  variant: "withall" | "normal";
+  imageUrl: string
+  title: string
+  variant: 'withall' | 'normal'
 }
 
 function Topic2(props: Props) {
   return (
     <>
-      {props.variant === "normal" ? (
+      {props.variant === 'normal' ? (
         <Popover>
           <PopoverTrigger>
-            <div className="flex gap-4 w-full items-center py-4 bg-gray-light mx-auto px-14">
+            <div className='mx-auto flex w-full items-center gap-4 bg-gray-light px-14 py-4'>
               {/* Icon */}
               <div>
-                <Image alt="icon" src={props.imageUrl} width={52} height={52} />
+                <Image alt='icon' src={props.imageUrl} width={52} height={52} />
               </div>
-              <div className="flex flex-col gap-3">
+              <div className='flex flex-col gap-3'>
                 <p
-                  className={`font-semibold text-base ${
-                    props.variant === "normal" ? "text-black" : "text-blue-dark"
+                  className={`text-base font-semibold ${
+                    props.variant === 'normal' ? 'text-black' : 'text-blue-dark'
                   }`}
                 >
                   {props.title}
@@ -35,29 +31,29 @@ function Topic2(props: Props) {
               {/* Text */}
             </div>
           </PopoverTrigger>
-          <PopoverContent className="first-letter:capitalize bg-[#ffffff]">
+          <PopoverContent className='bg-[#ffffff] first-letter:capitalize'>
             no information available at this moment.
           </PopoverContent>
         </Popover>
       ) : (
-        <Link href={"/competing_products"}>
-          <div className="flex gap-4 max-w-[544px] items-center py-4 bg-gray-light px-14">
+        <Link href={'/competing_products'}>
+          <div className='flex max-w-[544px] items-center gap-4 bg-gray-light px-14 py-4'>
             {/* Icon */}
             <div>
-              <Image alt="icon" src={props.imageUrl} width={52} height={52} />
+              <Image alt='icon' src={props.imageUrl} width={52} height={52} />
             </div>
-            <div className="flex flex-col gap-3">
-              <p className={`font-semibold text-base text-blue-dark`}>
+            <div className='flex flex-col gap-3'>
+              <p className={`text-base font-semibold text-blue-dark`}>
                 {props.title}
               </p>
-              {props.variant === "withall" && (
-                <div className="flex gap-14">
-                  <p className="font-semibold text-sm max-w-[248px]">
+              {props.variant === 'withall' && (
+                <div className='flex gap-14'>
+                  <p className='max-w-[248px] text-sm font-semibold'>
                     Many Insurance companies compete to provide services .
                   </p>
                   <Image
-                    alt=""
-                    src={"/arrow-up-right.svg"}
+                    alt=''
+                    src={'/arrow-up-right.svg'}
                     width={39}
                     height={39}
                   />
@@ -69,7 +65,7 @@ function Topic2(props: Props) {
         </Link>
       )}
     </>
-  );
+  )
 }
 
-export default Topic2;
+export default Topic2
