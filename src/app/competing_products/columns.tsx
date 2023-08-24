@@ -12,7 +12,7 @@ export const columns: ColumnDef<productType>[] = [
     },
   },
   {
-    accessorKey: 'title',
+    accessorKey: 'sd',
     cell: data => {
       return (
         <div className='flex justify-center'>
@@ -22,7 +22,7 @@ export const columns: ColumnDef<productType>[] = [
     },
   },
   {
-    accessorKey: 'title',
+    accessorKey: 'titasale',
     cell: data => {
       return (
         <div className='flex justify-end'>

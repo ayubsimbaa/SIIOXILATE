@@ -78,7 +78,7 @@ interface OptionType {
 function Option(props: OptionType) {
   return (
     <Link className={`flex items-center gap-5`} href={props.url ?? '/'}>
-      <Image alt='' src={props.image_url} width={32} height={32} />
+      <Image alt='' src={props.image_url} width={32} height={32} className='aspect-square'/>
       <span className='font-semibold'>{props.title}</span>
     </Link>
   )

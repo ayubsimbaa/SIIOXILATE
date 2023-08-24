@@ -42,12 +42,10 @@ export default function RootLayout({
           <div className='bg-gray-800 relative mx-auto max-w-[1272px] flex-1 p-2'>
             <div className='flex flex-col gap-10'>
               {/* Header */}
-              {pathname !== 'new_insights' ||
-                ('competing_products' && (
-                  <Suspense fallback={<Loading />}>
-                    <TopSection />
-                  </Suspense>
-                ))}
+
+              <Suspense fallback={<Loading />}>
+                <TopSection />
+              </Suspense>
 
               {/* main */}
 
