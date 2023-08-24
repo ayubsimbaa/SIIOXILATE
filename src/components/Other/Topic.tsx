@@ -17,7 +17,13 @@ function Topic2(props: Props) {
             <div className='mx-auto flex w-full items-center gap-4 bg-gray-light px-14 py-4'>
               {/* Icon */}
               <div>
-                <Image alt='icon' src={props.imageUrl} width={52} height={52} />
+                <Image
+                  alt='icon'
+                  src={props.imageUrl}
+                  width={52}
+                  height={52}
+                  className='h-auto w-auto'
+                />
               </div>
               <div className='flex flex-col gap-3'>
                 <p
@@ -40,7 +46,13 @@ function Topic2(props: Props) {
           <div className='flex max-w-[544px] items-center gap-4 bg-gray-light px-14 py-4'>
             {/* Icon */}
             <div>
-              <Image alt='icon' src={props.imageUrl} width={52} height={52} />
+              <Image
+                alt='icon'
+                src={props.imageUrl}
+                width={52}
+                height={52}
+                className='h-auto w-auto'
+              />
             </div>
             <div className='flex flex-col gap-3'>
               <p className={`text-base font-semibold text-blue-dark`}>
@@ -52,10 +64,11 @@ function Topic2(props: Props) {
                     Many Insurance companies compete to provide services .
                   </p>
                   <Image
-                    alt=''
+                    alt='right up arrow'
                     src={'/arrow-up-right.svg'}
                     width={39}
                     height={39}
+                    className='w-10 h-10'
                   />
                 </div>
               )}
