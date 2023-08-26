@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from '@/registry/new-york/ui/dropdown-menu'
 
+
 interface DataTableColumnHeaderProps<TData, TValue>
   extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>
@@ -38,7 +39,7 @@ export function DataTableColumnHeader<TData, TValue>({
           <Button
             variant='ghost'
             size='sm'
-            className='data-[state=open]:bg-accent flex h-8'
+            className='data-[state=open]:bg-white flex h-8'
           >
             <span>{title}</span>
             {column.getIsSorted() === 'desc' ? (
