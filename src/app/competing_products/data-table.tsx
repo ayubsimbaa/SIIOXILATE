@@ -66,11 +66,14 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className='space-y-4'>
-      <div className='rounded-md border'>
-        <Table>
+      <div className=''>
+        <Table className=''>
           <TableHeader>
             {table.getHeaderGroups().map(headerGroup => (
-              <TableRow key={headerGroup.id} className='hover:bg-gray-light'>
+              <TableRow
+                key={headerGroup.id}
+                className='border-[1px] border-black/10 hover:bg-gray-light'
+              >
                 {headerGroup.headers.map(header => {
                   return (
                     <TableHead key={header.id}>
@@ -92,7 +95,7 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className='hover:bg-gray-light'
+                  className='hover:bg-gray-light border-[1px] border-black/10'
                 >
                   {row.getVisibleCells().map(cell => (
                     <TableCell key={cell.id}>
