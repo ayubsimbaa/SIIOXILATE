@@ -12,6 +12,7 @@ const buttonVariants = cva('px-2 w-fit', {
       with_icon: 'flex gap-5 items-center ',
       validate_insight: 'bg-[#8BDA8E] rounded-xl text-white px-9 py-2',
       calcel_insight: 'bg-[#DA8B8B] rounded-xl text-white px-9 py-2',
+      ghost:''
     },
   },
   defaultVariants: {

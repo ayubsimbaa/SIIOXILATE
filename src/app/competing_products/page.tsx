@@ -10,7 +10,7 @@ export default function Page() {
       <div className='my-5 bg-white p-4'>
         <p className='ml-4 text-3xl font-bold'> Smart Insurance </p>
         <p className='ml-4 text-3xl font-bold'>Competing Products!</p>
-        <div className='p-10'>
+        <div className='px-4 py-2'>
           <DataTable data={competingProducts} columns={columns} />
         </div>
       </div>

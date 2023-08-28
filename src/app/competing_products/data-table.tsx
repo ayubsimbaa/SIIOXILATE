@@ -23,7 +23,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/registry/new-york/ui/table'
+} from '@components/ui/table'
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -66,14 +66,11 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className='space-y-4'>
-      <div className=''>
-        <Table className=''>
+      <div className='rounded-md border-black/10 border'>
+        <Table>
           <TableHeader>
             {table.getHeaderGroups().map(headerGroup => (
-              <TableRow
-                key={headerGroup.id}
-                className='border-[1px] border-black/10 hover:bg-gray-light'
-              >
+              <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map(header => {
                   return (
                     <TableHead key={header.id}>
@@ -95,7 +92,6 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className='hover:bg-gray-light border-[1px] border-black/10'
                 >
                   {row.getVisibleCells().map(cell => (
                     <TableCell key={cell.id}>
@@ -111,7 +107,7 @@ export function DataTable<TData, TValue>({
               <TableRow>
                 <TableCell
                   colSpan={columns.length}
-                  className='h-24 text-center'
+                  className='h-16 text-center'
                 >
                   No results.
                 </TableCell>

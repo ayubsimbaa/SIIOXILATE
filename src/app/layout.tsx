@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${lato.variable} ${averia.variable} ${actor.variable} bg-blue-700 min-h-screen antialiased [&::-webkit-scrollbar]:hidden`}
+        className={`${lato.variable} ${averia.variable} ${actor.variable} min-h-screen antialiased [&::-webkit-scrollbar]:hidden`}
       >
         <div className='flex h-screen bg-gray-light font-lato '>
           <Aside />
