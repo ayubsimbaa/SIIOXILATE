@@ -10,11 +10,11 @@ export default function Page() {
   const showFrame = useCompetingStore(s => s.showFrame)
   return (
     <div>
-      <div className='my-5 bg-white p-4'>
+      <div className='my-5 bg-grey p-4'>
         {showFrame ? (
           <Iframe
             url='https://next-js-front.vercel.app/'
-            width='1052px'
+            width='1220px'
             height='634px'
             id=''
             className=''
@@ -31,6 +31,6 @@ export default function Page() {
           </>
         )}
       </div>
-    </div>
-  )
+    </div>
+  )
 }
