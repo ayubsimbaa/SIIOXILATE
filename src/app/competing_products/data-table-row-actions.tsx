@@ -24,7 +24,7 @@ export function DataTableRowActions<TData>({
   const router = useRouter()
 
   const handleShowIframe = () => {
-    router.push('competing_products/chat')
+    router.push('competing_products/axaseguros/chat')
   }
 
   return (
