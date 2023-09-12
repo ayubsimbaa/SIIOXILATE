@@ -3,7 +3,6 @@
 import { DotsHorizontalIcon } from '@radix-ui/react-icons'
 import { Row } from '@tanstack/react-table'
 
-import { useCompetingStore } from '@/src/zustand_store/competingStore'
 import { Button } from '@components/ui/button'
 import {
   DropdownMenu,
@@ -11,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@components/ui/dropdown-menu'
+import { useRouter } from 'next/navigation'
 import { useRef } from 'react'
 
 interface DataTableRowActionsProps<TData> {
@@ -20,29 +20,11 @@ interface DataTableRowActionsProps<TData> {
 export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
-  const setFrame = useCompetingStore(s => s.setFrame)
-
   const iframeRef = useRef<HTMLIFrameElement | null>(null)
+  const router = useRouter()
 
   const handleShowIframe = () => {
-    // const iframe = document.createElement('iframe')
-    // iframe.src = 'https://next-js-front.vercel.app/'
-    // iframe.title = 'Example Iframe'
-    // iframe.className = 'w-1/2 h-1/2'
-    // iframe.style.position = 'fixed'
-    // iframe.style.top = '0'
-    // iframe.style.left = '0'
-    // iframe.style.zIndex = '50'
-
-    // document.body.appendChild(iframe)
-
-    // iframe.requestFullscreen().catch(err => {
-    //   alert(
-    //     `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
-    //   )
-    // })
-
-    setFrame(true)
+    router.push('competing_products/chat')
   }
 
   return (
