@@ -1,3 +1,10 @@
+/**
+ * The function returns a React component that renders an iframe with a specific URL, width, and
+ * height.
+ * @returns The code is returning a React component that renders an iframe element. The iframe is set
+ * to display a webpage with the URL 'https://next-js-front.vercel.app/'. The iframe has a width of
+ * '1220px' and a height of '634px'.
+ */
 import Iframe from 'react-iframe'
 
 export default function Page() {
