@@ -13,6 +13,8 @@ export default function Aside() {
     {
       image_url: '/svg/attachment.svg',
       title: 'My Files',
+      url: '/my_files',
+      is_active: true,
     },
     {
       image_url: '/svg/topic.svg',
