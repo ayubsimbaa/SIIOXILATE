@@ -13,6 +13,9 @@ export default function TopSection() {
       {pathname === 'new_insights' && (
         <div className='text-lg font-semibold'>Insights</div>
       )}
+      {pathname === 'my_files' && (
+        <div className='text-lg font-semibold'>Document Insights</div>
+      )}
       {pathname === null && (
         <div className='text-lg font-semibold'>My topics</div>
       )}
