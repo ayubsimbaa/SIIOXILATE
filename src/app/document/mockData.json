@@ -1,0 +1,24 @@
+{
+  "insights": [
+    {
+      "title": "Decreased Sales in August",
+      "subtitle": "Based on 4 offers and 5 clients",
+      "body": {
+        "text": "We've noticed a significant drop in sales for the month of August. This could be due to the <span class=highlight>holiday season</span> or other external factors.",
+        "highlightedInfo": {
+          "holiday season": "August is a common holiday month which can affect sales."
+        }
+      }
+    },
+    {
+      "title": "Increased Web Traffic",
+      "subtitle": "Based on 10,000 page views",
+      "body": {
+        "text": "We've observed a surge in website traffic in the last week. This might be related to the <span class=highlight>recent marketing campaign</span>.",
+        "highlightedInfo": {
+          "recent marketing campaign": "The marketing campaign started in the first week of August and targeted social media platforms."
+        }
+      }
+    }
+  ]
+}
