@@ -1,3 +1,4 @@
+import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 interface DocumentCardProps {
@@ -13,11 +14,19 @@ interface ScrollListProps {
   documents: DocumentData[]
 }
 
-function onClickDocument(documentName: string) {
-  console.log(`clicked on ${documentName}`)
-}
-
 const DocumentCard: React.FC<DocumentCardProps> = ({ documentName }) => {
+  const router = useRouter()
+  /**
+   * The function onClickDocument redirects the user to the '/document' route when a document name is
+   * clicked.
+   * @param {string} documentName - The parameter `documentName` is a string that represents the name of
+   * the document that is being clicked.
+   */
+
+  function onClickDocument(documentName: string) {
+    router.push('/document')
+  }
+
   return (
     <div
       className='mb-2 flex items-center overflow-hidden rounded-lg border border-gray-light bg-white p-4'
