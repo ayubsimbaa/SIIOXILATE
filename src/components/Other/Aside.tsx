@@ -12,7 +12,7 @@ export default function Aside() {
     },
     {
       image_url: '/svg/attachment.svg',
-      title: 'My Files',
+      title: 'Document Insights',
       url: '/my_files',
       is_active: true,
     },
