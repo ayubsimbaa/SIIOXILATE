@@ -7,9 +7,9 @@ import PdfOutput from './PdfOutput'
 
 export default function PdfViewer(props: DocumentHistoryProps) {
   return (
-    <div className='bg-gray-500 flex flex-col'>
+    <div className='flex flex-col bg-gray-500'>
       {/* Header */}
-      <div className='bg-gray-300 flex w-full justify-between'>
+      <div className='flex w-full justify-between bg-gray-300'>
         <DocumentDetails
           description={props.description}
           title={props.title}
@@ -18,7 +18,7 @@ export default function PdfViewer(props: DocumentHistoryProps) {
         <Image alt='' src={threeDot} className='mr-7' />
       </div>
 
-      <ScrollArea className='h-[400px] w-[1200px]'>
+      <ScrollArea className='h-[300px] w-full'>
         <MainContent />
       </ScrollArea>
       <PdfOutput />
