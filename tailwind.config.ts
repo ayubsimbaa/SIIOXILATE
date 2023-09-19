@@ -19,16 +19,16 @@ const config: Config = {
         blue: {
           dark: '#00a8cb',
         },
-        'purple-100': '#F0F5FF', //used
-        'blue-300': '#299DB7', //used
-        'blue-400': '#0088EB', //used
-        'blue-500': '#2F80ED', //used
-        'gray-100': '#A5A5A5', //use
-        'gray-200': '#B0DDE7', //use
-        'gray-300': '#91A1C1', //use
-        'gray-400': '#405A6D', // use
-        'gray-500': '#2A313F', //use
-        'gray-600': '#707175', //use
+        'purple-100': '#F0F5FF',
+        'blue-300': '#299DB7',
+        'blue-400': '#0088EB',
+        'blue-500': '#2F80ED',
+        'gray-100': '#A5A5A5',
+        'gray-200': '#B0DDE7',
+        'gray-300': '#91A1C1',
+        'gray-400': '#405A6D',
+        'gray-500': '#2A313F',
+        'gray-600': '#707175',
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
