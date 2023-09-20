@@ -1,23 +1,102 @@
 [
-    { "id": 1, "documentName": "simbaaxaseguros.pdf" },
-    { "id": 2, "documentName": "anotherDocument.pdf" },
-    { "id": 3, "documentName": "yetAnother.pdf" },
-    { "id": 4, "documentName": "finalDocument.pdf" },
-    { "id": 5, "documentName": "document5.pdf" },
-    { "id": 6, "documentName": "document6.pdf" },
-    { "id": 7, "documentName": "document7.pdf" },
-    { "id": 8, "documentName": "document8.pdf" },
-    { "id": 9, "documentName": "document9.pdf" },
-    { "id": 10, "documentName": "document10.pdf" },
-    { "id": 11, "documentName": "document11.pdf" },
-    { "id": 12, "documentName": "document12.pdf" },
-    { "id": 13, "documentName": "document13.pdf" },
-    { "id": 14, "documentName": "document14.pdf" },
-    { "id": 15, "documentName": "document15.pdf" },
-    { "id": 16, "documentName": "document16.pdf" },
-    { "id": 17, "documentName": "document17.pdf" },
-    { "id": 18, "documentName": "document18.pdf" },
-    { "id": 19, "documentName": "document19.pdf" },
-    { "id": 20, "documentName": "document20.pdf" }
-  ]
-  
+  {
+    "id": 1,
+    "documentName": "simbaaxaseguros.pdf",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio laborum quo deleniti veritatis, reprehenderit, nobis, porro ullam omnis unde tenetur hic. Numquam eveniet, nam perspiciatis, officiis odit reiciendis laborum libero illum placeat maiores eaque quam eum sit magnam omnis, expedita molestiae sed. Exercitationem commodi eveniet culpa nam, reprehenderit debitis illum ad neque corporis eius laboriosam praesentium odit beatae quis pariatur molestiae illo quam repudiandae ea maxime error aspernatur repellendus voluptates. Beatae laudantium mollitia sapiente sit aliquid consectetur soluta facilis recusandae temporibus, veniam laborum illo voluptas voluptatibus facere doloremque quam iste commodi? Magni repellendus maxime aliquid a rerum qui reprehenderit iusto voluptas laboriosam nobis commodi facere dolore, nesciunt porro magnam rem at illum vero voluptates sit. Dolorem enim animi exercitationem repellendus quibusdam sed, cupiditate laudantium natus harum? Sequi, fugit. Dolorem, nobis necessitatibus! Aliquid porro asperiores beatae aperiam consequatur provident sapiente possimus animi laboriosam ducimus consequuntur ipsum dolor, qui cum fugiat omnis reprehenderit magni officia ratione dignissimos. Architecto, animi quasi. Est omnis dignissimos nulla optio! Modi minus error, voluptatem commodi velit alias ex tenetur suscipit excepturi iure vitae recusandae laboriosam numquam doloremque omnis eum. Magnam reprehenderit, repudiandae, sequi illo ut nesciunt consectetur totam quisquam aspernatur officiis voluptate! Quibusdam odio velit maiores reiciendis dolor molestiae earum ut animi quis quaerat ipsum voluptas eaque nisi architecto aperiam, nihil ex quas sed! Quasi, fuga commodi veniam tenetur veritatis doloremque, exercitationem, dicta rem deleniti pariatur ut modi obcaecati voluptatem reprehenderit iste libero saepe sunt accusamus aspernatur optio aliquam sed quam! Placeat, maxime, corrupti tempore vero perspiciatis, laboriosam eos quis impedit culpa facere temporibus accusamus! Maxime dolor nostrum fugit mollitia consequatur ut atque amet itaque, debitis adipisci perferendis, ullam aut id. Dolor rem, quas illo nobis aspernatur velit perferendis tempore praesentium cum laboriosam eveniet totam laudantium aut deserunt esse saepe, tenetur assumenda voluptas itaque dolorem et?"
+  },
+  {
+    "id": 2,
+    "documentName": "anotherDocument.pdf",
+    "details": "The Internet of Things (IoT) has enabled insurers to collect data from connected devices. Telematics devices in cars, for instance, transmit data on driving habits, location, and vehicle health, helping insurers determine appropriate premiums and offer discounts for safer driving."
+  },
+  {
+    "id": 3,
+    "documentName": "yetAnother.pdf",
+    "details": "Smart insurance leverages blockchain technology for faster and more secure claims processing. This reduces fraud and streamlines the claims approval process by creating a transparent, immutable ledger of transactions."
+  },
+  {
+    "id": 4,
+    "documentName": "finalDocument.pdf",
+    "details": "AI algorithms are used for risk assessment, fraud detection, and customer service in smart insurance. These systems can analyze vast amounts of data quickly, enabling insurers to make better-informed decisions."
+  },
+  {
+    "id": 5,
+    "documentName": "document5.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 6,
+    "documentName": "document6.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 7,
+    "documentName": "document7.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 8,
+    "documentName": "document8.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 9,
+    "documentName": "document9.pdf",
+    "details": "sazzad"
+  },
+  {
+    "id": 10,
+    "documentName": "document10.pdf",
+    "details": "sazzad"
+  },
+  {
+    "id": 11,
+    "documentName": "document11.pdf",
+    "details": "sazzad"
+  },
+  {
+    "id": 12,
+    "documentName": "document12.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 13,
+    "documentName": "document13.pdf",
+    "details": "sazzad"
+  },
+  {
+    "id": 14,
+    "documentName": "document14.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 15,
+    "documentName": "document15.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 16,
+    "documentName": "document16.pdf",
+    "details": "sazzad"
+  },
+  {
+    "id": 17,
+    "documentName": "document17.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 18,
+    "documentName": "document18.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 19,
+    "documentName": "document19.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  },
+  {
+    "id": 20,
+    "documentName": "document20.pdf",
+    "details": "Insurers employ chatbots and virtual assistants to enhance customer support. These AI-driven tools can answer policyholder queries, provide policy information, and even guide customers through the claims process, improving customer satisfaction."
+  }
+]
