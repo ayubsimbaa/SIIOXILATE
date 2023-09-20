@@ -1,3 +1,4 @@
+'use client'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs'
 import Explain from '@svg/explain.svg'
 import Graph from '@svg/graph.svg'
@@ -15,7 +16,7 @@ export default function PdfOutput() {
           value='Explain'
           className={`  ${
             activeButton === 'Explain' ? 'bg-blue-300' : 'bg-gray-400'
-          } absolute top-5 left-14 rounded-t-md px-6  py-[6px] capitalize text-white hover:bg-blue-300/50`}
+          } absolute left-14 top-5 rounded-t-md px-6  py-[6px] capitalize text-white hover:bg-blue-300/50`}
           onClick={() => setActiveButton('Explain')}
         >
           Explain
@@ -24,7 +25,7 @@ export default function PdfOutput() {
           value='Graph'
           className={`
           ${activeButton === 'Graph' ? 'bg-blue-300' : 'bg-gray-400'}
-          absolute top-5 left-44 rounded-t-md px-6  py-[6px] capitalize text-white hover:bg-blue-300/50 `}
+          absolute left-44 top-5 rounded-t-md px-6  py-[6px] capitalize text-white hover:bg-blue-300/50 `}
           onClick={() => setActiveButton('Graph')}
         >
           Graph
