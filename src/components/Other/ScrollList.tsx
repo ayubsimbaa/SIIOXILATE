@@ -54,7 +54,7 @@ const ScrollList: React.FC<ScrollListProps> = ({ documents }) => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        displayDocuments.map(doc => <DocumentCard {...doc} />)
+        displayDocuments.map(doc => <DocumentCard {...doc} key={doc.id} />)
       )}
     </div>
   )
