@@ -29,7 +29,7 @@ const DocumentCard: React.FC<DocumentCardProps> = ({ documentName }) => {
 
   return (
     <div
-      className='mb-2 flex items-center overflow-hidden rounded-lg border border-gray-light bg-white p-4'
+      className='mb-2 flex items-center overflow-hidden rounded-lg border border-gray-light bg-white p-4 cursor-pointer hover:bg-blue-dark'
       onClick={() => onClickDocument(documentName)}
     >
       <div className='text-xl'>📄</div>
