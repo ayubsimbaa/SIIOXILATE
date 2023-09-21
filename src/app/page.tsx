@@ -2,8 +2,10 @@
 
 import Topic from '@components/Other/Topic'
 import Image from 'next/image'
+import { useTopSectionHook } from '../hooks/useTopSectionHook'
 
 export default function Home() {
+  useTopSectionHook('home')
   return (
     <div className='bg-[#ffffff] py-8'>
       <div className='space-y-2 pl-8'>
