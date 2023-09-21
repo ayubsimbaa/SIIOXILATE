@@ -5,9 +5,12 @@
  * to display a webpage with the URL 'https://next-js-front.vercel.app/'. The iframe has a width of
  * '1220px' and a height of '634px'.
  */
+"use client"
+import { useTopSectionHook } from '@/src/hooks/useTopSectionHook'
 import Iframe from 'react-iframe'
 
 export default function Page() {
+  useTopSectionHook('chat')
   return (
     <div>
       <div className='bg-grey my-5 p-4'>
