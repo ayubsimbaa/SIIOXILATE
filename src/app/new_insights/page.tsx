@@ -1,11 +1,13 @@
 'use client'
 
 import Insights from '@/src/components/Other/Insights'
+import { useTopSectionHook } from '@/src/hooks/useTopSectionHook'
 import { useEffect, useState } from 'react'
 import mockData from './mockData.json'
 
 export default function Page() {
   const [data, setData] = useState<DataType>()
+  useTopSectionHook('Insights')
 
   useEffect(() => {
     // Simulating a delay as if it's a real request
