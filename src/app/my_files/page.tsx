@@ -3,6 +3,7 @@
 import DocumentSelector from '@/src/components/Other/DocumentSelector'
 import ScrollList from '@/src/components/Other/ScrollList'
 import { ScrollArea } from '@/src/components/ui/scroll-area'
+import { useTopSectionHook } from '@/src/hooks/useTopSectionHook'
 import React, { useState } from 'react'
 import mockData from './mockData.json'
 
@@ -13,6 +14,7 @@ const MyPage: React.FC = () => {
     setSelectedDocument(fileName)
   }
 
+  useTopSectionHook('Document insights')
   return (
     <div className='container mx-auto grid grid-cols-2 gap-7 p-2'>
       <div className='col-span-1 rounded-lg '>
