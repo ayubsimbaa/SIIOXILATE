@@ -7,7 +7,7 @@ import PdfOutput from './PdfOutput'
 
 export default function PdfViewer(props: DocumentHistoryProps) {
   return (
-    <div className='flex flex-col bg-gray-500'>
+    <div className='flex flex-col bg-black'>
       {/* Header */}
       <div className='flex w-full justify-between bg-gray-300'>
         <DocumentDetails

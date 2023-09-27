@@ -14,7 +14,7 @@ export default function DocumentDetails(props: DocumentHistoryProps) {
       className={`font-mont group flex max-w-lg items-start gap-4 rounded-lg py-8 pl-8 shadow-sm
       ${
         props.usedAs === 'inactiveHistory'
-          ? 'bg-offwhite-100 hover:bg-gray-400'
+          ? 'bg-offwhite-100 hover:bg-[#6DB8F2] '
           : ''
       }
       ${

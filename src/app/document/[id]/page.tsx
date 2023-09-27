@@ -11,8 +11,8 @@ export default function Page({ params }: { params: { id: number } }) {
   useTopSectionHook(mockData[params.id - 1].documentName)
   return (
     <div>
-      <div className='flex flex-col bg-gray-500'>
-        <div className='flex w-full justify-between bg-gray-300'>
+      <div className='flex flex-col bg-white'>
+        <div className='flex w-full justify-between bg-gray-dark'>
           <DocumentDetails
             title={mockData[params.id - 1].documentName}
             description={`id:${params.id}`}
@@ -21,7 +21,7 @@ export default function Page({ params }: { params: { id: number } }) {
           <Image alt='' src={threeDot} className='mr-7' />
         </div>
 
-        <ScrollArea className='h-[300px] w-full pl-8 pt-7 text-white'>
+        <ScrollArea className='h-[300px] w-full pl-8 pt-7 text-black'>
           {mockData[params.id - 1].details}
         </ScrollArea>
         <PdfOutput />
