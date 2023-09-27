@@ -4,79 +4,24 @@ import { useState } from 'react'
 import CytoscapeComponent from 'react-cytoscapejs'
 
 export default function GraphDisplay() {
-  const data = {
-    data: {
-      actors: [
-        {
-          __typename: 'Actor',
-          ID: 1,
-          name: 'François Lallement',
-          acted_in: [
-            {
-              __typename: 'Movie',
-              ID: 3,
-              title: 'Trip to the Moon, A (Voyage dans la lune, Le)',
-              genres: [
-                {
-                  __typename: 'Genre',
-                  ID: 5,
-                  name: 'Action',
-                },
-                {
-                  __typename: 'Genre',
-                  ID: 6,
-                  name: 'Adventure',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          __typename: 'Actor',
-          ID: 2,
-          name: 'Jules-Eugène Legris',
-          acted_in: [
-            {
-              __typename: 'Movie',
-              ID: 3,
-              title: 'Trip to the Moon, A (Voyage dans la lune, Le)',
-              genres: [
-                {
-                  __typename: 'Genre',
-                  ID: 7,
-                  name: 'Sci-Fi',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  }
   const [width, setWith] = useState('100%')
   const [height, setHeight] = useState('400px')
-  const elements = [
-    { data: { id: 'one', label: 'Node 1' }, position: { x: 0, y: 0 } },
-    { data: { id: 'two', label: 'Node 2' }, position: { x: 100, y: 0 } },
-    {
-      data: { source: 'one', target: 'two', label: 'Edge from Node1 to Node2' },
-    },
-  ]
+
   const [graphData, setGraphData] = useState({
     nodes: [
       { data: { id: '1', label: 'IP 1', type: 'ip' } },
-      { data: { id: '2', label: 'Device 1', type: 'device' } },
+      { data: { id: '2', label: 'Coverage 1', type: 'Coverage' } },
       { data: { id: '3', label: 'IP 2', type: 'ip' } },
-      { data: { id: '4', label: 'Device 2', type: 'device' } },
-      { data: { id: '5', label: 'Device 3', type: 'device' } },
+      { data: { id: '4', label: 'Coverage 2', type: 'Coverage' } },
+      { data: { id: '5', label: 'Coverage 3', type: 'Coverage' } },
       { data: { id: '6', label: 'IP 3', type: 'ip' } },
-      { data: { id: '7', label: 'Device 5', type: 'device' } },
-      { data: { id: '8', label: 'Device 6', type: 'device' } },
-      { data: { id: '9', label: 'Device 7', type: 'device' } },
-      { data: { id: '10', label: 'Device 8', type: 'device' } },
-      { data: { id: '11', label: 'Device 9', type: 'device' } },
+      { data: { id: '7', label: 'Coverage 5', type: 'Coverage' } },
+      { data: { id: '8', label: 'Coverage 6', type: 'Coverage' } },
+      { data: { id: '9', label: 'Coverage 7', type: 'Coverage' } },
+      { data: { id: '10', label: 'Coverage 8', type: 'Coverage' } },
+      { data: { id: '11', label: 'Coverage 9', type: 'Coverage' } },
       { data: { id: '12', label: 'IP 3', type: 'ip' } },
-      { data: { id: '13', label: 'Device 10', type: 'device' } },
+      { data: { id: '13', label: 'Coverage 10', type: 'Coverage' } },
     ],
     edges: [
       {
@@ -151,7 +96,7 @@ export default function GraphDisplay() {
       },
     },
     {
-      selector: "node[type='device']",
+      selector: "node[type='Coverage']",
       style: {
         shape: 'rectangle',
       },
@@ -172,7 +117,7 @@ export default function GraphDisplay() {
   let myCyRef
 
   return (
-    <div className='h-72 w-full bg-gray-dark overflow-hidden'>
+    <div className='h-72 w-full overflow-hidden bg-gray-dark'>
       <CytoscapeComponent
         elements={CytoscapeComponent.normalizeElements(graphData)}
         // pan={{ x: 200, y: 200 }}
