@@ -1,10 +1,10 @@
 'use client'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs'
-import Explain from '@svg/explain.png'
-import Graph from '@svg/graph.png'
 import contentData from '@/src/app/my_files/content.json';
-import Image from 'next/image'
-import { useState } from 'react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs';
+import Explain from '@svg/explain.png';
+import Image from 'next/image';
+import { useState } from 'react';
+import GraphDisplay from './GraphDisplay';
 
 export default function PdfOutput() {
   const [activeButton, setActiveButton] = useState<'Explain' | 'Graph'>(
@@ -55,7 +55,3 @@ function ExplainDisplay() {
 }
 
 
-function GraphDisplay() {
-  return <div className='bg-gray-dark w-full h-72 flex justify-center items-center'>
-    <Image alt='graph image' src={Graph} className='w-1/2 pl-16 pt-6 pr-5' />
-    </div>}
