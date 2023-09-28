@@ -55,7 +55,7 @@ export default function GraphDisplay() {
       selector: 'node',
       style: {
         backgroundColor: (node: { data: (arg0: string) => string; }) => node.data('type') === 'ip' ? '#4a56a6' : '#78aaff',
-        shape: (node: { data: (arg0: string) => string; }) => node.data('type') === 'ip' ? 'ellipse' : 'rectangle',
+        shape: (node: { data: (arg0: string) => string; }) => node.data('type') === 'ip' ? 'ellipse' : 'circle',
         width: 30,
         height: 30,
         label: 'data(label)',
