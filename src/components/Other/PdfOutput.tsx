@@ -1,10 +1,9 @@
 'use client'
 import contentData from '@/src/app/my_files/content.json';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs';
-import Explain from '@svg/explain.png';
-import Image from 'next/image';
 import { useState } from 'react';
 import GraphDisplay from './GraphDisplay';
+import BadgeList from './BadgeList';
 
 export default function PdfOutput() {
   const [activeButton, setActiveButton] = useState<'Explain' | 'Graph'>(
@@ -48,8 +47,10 @@ function ExplainDisplay() {
 
   return (
     <div className='bg-gray-dark w-full h-72'>
-      <Image alt='explain image' src={Explain} className='w-full pl-3 pr-3 pt-7' />
-      <p className='w-full pl-8 pt-7' dangerouslySetInnerHTML={{ __html: explainContent }} />
+      <div className=' pl-3 pr-3 pt-7'>
+      <BadgeList/>
+      </div>
+      <p className='w-full  pl-8 pt-7' dangerouslySetInnerHTML={{ __html: explainContent }} />
     </div>
   );
 }
